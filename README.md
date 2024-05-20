@@ -6,19 +6,23 @@
 - 인구감소지수는 총 8가지의 지표로 측정 됨</br>①연평균인구증감률, ②인구밀도, ③청년순이동률, ④주간인구, ⑤고령화 비율, ⑥유소년 비율, ⑦조출생률, ⑧재정자립도
 - 참고: 행정안전부 인구감소지역 지정 [[바로가기](https://www.mois.go.kr/frt/sub/a06/b06/populationDecline/screen.do)]
 
-<figure align= 'center'>
-    <img src='./img/행안부_인구감소지역_202309.jpg' width= '250px' title='인구감소지역'></img>
-    <figcaption>그림1. 행안부 인구감소지역</figcaption>
-</figure>
+<p align= 'center'>
+    <figure align= 'center'>
+        <img src='./img/행안부_인구감소지역_202309.jpg' width= '250px' title='인구감소지역'></img>
+        <figcaption>그림1. 행안부 인구감소지역</figcaption>
+    </figure>
+</p>
 
 ### - 인구구조 및 인구이동 데이터
 - 선행연구 조사를 통해 인구구조 및 인구이동 연령층 선정
 - 총 5개의 연령층과 외국인 인구를 본 연구에서 사용</br>①신생아(0세), ②유소년인구(1세~14세), ③청년가임인구(20세~39세), ④소비활력인구(40세~59세), ⑤고령인구(65세 이상)
 
-<figure align= 'center'>
-    <img src='./img/인구구분_선행연구.png', title= '인구 연령구분 선행연구'>
-    <figcaption>그림2. 인구 연령구분 선행연구</figcaption>
-</figure>
+<p align= 'center'>
+    <figure align= 'center'>
+        <img src='./img/인구구분_선행연구.png', title= '인구 연령구분 선행연구'>
+        <figcaption>그림2. 인구 연령구분 선행연구</figcaption>
+    </figure>
+</p>
 
 ## 2. 데이터
 - 모든 데이터는 국가통계포털(KOSIS)에서 수집함
