@@ -25,14 +25,45 @@
 - (공간범위) 전국 229개 시군구의 인구 시계열 데이터를 기반으로 도시유형 분류 수행
 - (시간범위) 2013년부터 2022년까지 전연령 인구 데이터
 
-구분 | 데이터 | 연령기준
-:-: | :-: | :-:
-1 | 신생아 비율 | 0세
-2 | 유소년인구 비율 | 1세 ~ 14세
-3 | 청년가임인구 비율 | 20세 ~ 39세
-4 | 소비활력인구 비율 | 40세 ~ 59세
-5 | 고령인구 비율 | 65세 이상
-6 | 외국인 비율 | -
+<p align= 'center'>
+    <table>
+        <tr>
+            <th style= 'text-align:center'>구분</th>
+            <th style= 'text-align:center' width= 200 >데이터</th>
+            <th style= 'text-align:center'>연령기준</th>
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>1</th>
+            <th style= 'text-align:center'>신생아 비율</th> 
+            <th style= 'text-align:center'>0세</th>    
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>2</th> 
+            <th style= 'text-align:center'>유소년인구 비율</th> 
+            <th style= 'text-align:center'>1세 ~ 14세</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>3</th> 
+            <th style= 'text-align:center'>청년가임인구 비율</th> 
+            <th style= 'text-align:center'>20세 ~ 39세</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>4</th> 
+            <th style= 'text-align:center'>소비활력인구 비율</th> 
+            <th style= 'text-align:center'>40세 ~ 59세</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>5</th> 
+            <th style= 'text-align:center'>고령인구 비율</th> 
+            <th style= 'text-align:center'>65세 이상</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>6</th> 
+            <th style= 'text-align:center'>외국인 비율</th> 
+            <th style= 'text-align:center'>-</th> 
+        </tr>
+    </table>
+</p>
 
 ## 3. 분석 방법론
 ### 3.1. 데이터 전처리
@@ -43,15 +74,36 @@
 - Elbow Plot과 Shillhouette Plot 결과를 바탕으로 최적의 K 도출
 - 시계열의 거리 측정 방식에는 대표적으로 유클리드 거리(Euclidean Distance)와 동적 시간 왜곡(Dynamic Time Warping; DTW)가 있으며, 본 연구에서는 시계열의 비슷한 패턴을 바탕으로 도시유형화를 하기 위해 DTW를 사용
 
-<p align= 'center'>표1. Euclidean Distance와 Dynamic Time Warping(DTW)의 차이</p>
-
-구분 | 유클리드거리</br>(Euclidean Distance) | 동적 시간 왜곡</br>(Dynamic Time Warping)
-:-: | :-: | :-:
-정의 | 시계열 각 지점의 거리의 합을 계산 | 시계열의 비선형적인 매핑을 허용하여</br>최적의 매칭을 찾음
-특징 | 각 시점의 값들을 직접 비교 | 시계열 간의 시간적 변동성을</br>고려하여 비교
-장점 | 계산이 빠르고 간단함</br>일반적인 시계열 데이터 분석에 적합 | 시간 축의 변동을 허용하여 더 유연한 매칭</br>비슷한 패턴 감지 용이
-단점 | 시간의 변동성이나 길이가 다른 시계열 데이터에</br>적용하기 어려움 | 계산 시간이 길고 복잡</br>큰 데이터 셋에는 접하지 않을 수 있음
-
+<p align= 'center'>
+    표2. Euclidean Distance와 Dynamic Time Warping(DTW)의 차이
+    <table>
+        <tr>
+            <th style= 'text-align:center'>구분</th>
+            <th style= 'text-align:center'>유클리드거리</br>(Euclidean Distance)</th>
+            <th style= 'text-align:center'>동적 시간 왜곡</br>(Dynamic Time Warping)</th>
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>정의</th>
+            <th style= 'text-align:center'>시계열 각 지점의 거리의 합을 계산</th> 
+            <th style= 'text-align:center'>시계열의 비선형적인 매핑을 허용하여</br>최적의 매칭을 찾음</th>    
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>특징</th> 
+            <th style= 'text-align:center'>각 시점의 값들을 직접 비교</th> 
+            <th style= 'text-align:center'>시계열 간의 시간적 변동성을</br>고려하여 비교</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>장점</th> 
+            <th style= 'text-align:center'>계산이 빠르고 간단함</br>일반적인 시계열 데이터 분석에 적합</th> 
+            <th style= 'text-align:center'>시간 축의 변동을 허용하여 더 유연한 매칭</br>비슷한 패턴 감지 용이</th> 
+        </tr>
+        <tr>
+            <th style= 'text-align:center'>단점</th> 
+            <th style= 'text-align:center'>시간의 변동성이나 길이가 다른 시계열 데이터에</br>적용하기 어려움</th> 
+            <th style= 'text-align:center'>계산 시간이 길고 복잡</br>큰 데이터 셋에는 접하지 않을 수 있음</th> 
+        </tr>
+    </table>
+</p>
 
 ## 4. K-Means Clustering
 ### 4.1. 최적의 K 찾기
