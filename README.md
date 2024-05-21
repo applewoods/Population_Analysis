@@ -16,7 +16,8 @@
 - 총 5개의 연령층과 외국인 인구를 본 연구에서 사용</br>①신생아(0세), ②유소년인구(1세~14세), ③청년가임인구(20세~39세), ④소비활력인구(40세~59세), ⑤고령인구(65세 이상)
 
 <p align= 'center'>
-    <img src='./img/인구구분_선행연구.png', title= '인구 연령구분 선행연구' />
+    <img src='./img/인구구분_선행연구.png' title= '인구 연령구분 선행연구' />
+    </br>그림2. 선행연구 인구 연령구분
 </p>
 
 ## 2. 데이터
@@ -58,11 +59,10 @@
 - Silhouette Plot: K가 5일 때의 Silhouette 점수를 확인하여 클러스터의 유효성 확인
 
 <p align= 'center'>
-    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '50%' />
-    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '50%' />
+    <img src='./img/Inertia.png' title= 'Inertia 결과' width= '48%' />
+    <img src='./img/Silhouette_Plot.png' title= '실루엣 분석결과' width= '48%' />
+    </br>그림3. Inertia결과(좌), 실루엣 분석결과(K=5)(우)
 </p>
-
-
 
 ## 5. 도시유형별 특징
 
