@@ -56,13 +56,13 @@
 - Elbow Method: Elbow 방법을 사용하여 최적의 K는 5로 정의
 
 <p align= 'center'>
-    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '250px'>
+    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '200px'>
 </p>
 
 - Silhouette Plot: K가 5일 때의 Silhouette 점수를 확인하여 클러스터의 유효성 확인
 
 <p align= 'center'>
-    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '250px'>
+    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '200px'>
 </p>
 
 ## 5. 도시유형별 특징
