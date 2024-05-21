@@ -25,19 +25,29 @@
 </p>
 
 ## 2. 데이터
-- 모든 데이터는 국가통계포털(KOSIS)에서 수집함
+- 모든 데이터는 국가통계포털(KOSIS)에서 수집
 - (공간범위) 전국 229개 시군구의 인구 시계열 데이터를 기반으로 도시유형 분류 수행
-- (시간범위) 2013년부터 2023년까지 전연령 인구 데이터
-- 사회적 인구이동(전입인구 - 전출인구)
-<br> • 1인 사회적 인구이동과 전체 사회적 인구이동은 클러스터분석에 주는 영향에 차이가 없음
-<br> • 사회적 인구이동의 많은 분을 1인 사회적 인구이동이 차지하기 때문
+- (시간범위) 2013년부터 2022년까지 전연령 인구 데이터
+
+구분 | 데이터 | 연령기준
+:-: | :-: | :-:
+1 | 신생아 비율 | 0세
+2 | 유소년인구 비율 | 1세 ~ 14세
+3 | 청년가임인구 비율 | 20세 ~ 39세
+4 | 소비활력인구 비율 | 40세 ~ 59세
+5 | 고령인구 비율 | 65세 이상
+6 | 외국인 비율 | -
 
 ## 3. 분석 방법론
 ### 3.1. 데이터 전처리
-- 시계열 인구 데이터는 
+- 시계열 인구 데이터를 분석에 그대로 사용할 경우 도시유형이 도시의 규모로 묶이는 경향이 있어 각 도시의 인구비율로 데이터를 전처리하여 분석 진행
+- 추가로 MinMax Scaler를 사용하여 인구비율 데이터를 추가로 전처리 진행
+
 ### 3.2. TimeSeries K-Means Clustering
 - Elbow Plot과 Shillhouette Plot 결과를 바탕으로 최적의 K 도출
-- Euclidean Distance와 Dynamic Time Warping(DTW)의 차이
+- 시계열의 거리 측정 방식에는 대표적으로 유클리드 거리(Euclidean Distance)와 동적 시간 왜곡(Dynamic Time Warping; DTW)가 있으며, 본 연구에서는 시계열의 비슷한 패턴을 바탕으로 도시유형화를 하기 위해 DTW를 사용
+
+<p align= 'center'>표1. Euclidean Distance와 Dynamic Time Warping(DTW)의 차이</p>
 
 구분 | 유클리드거리</br>(Euclidean Distance) | 동적 시간 왜곡</br>(Dynamic Time Warping)
 :-: | :-: | :-:
@@ -49,11 +59,22 @@
 
 ## 4. K-Means Clustering
 ### 4.1. 최적의 K 찾기
-#### - Elbow Method
-* 
+#### - Elbow Method: Elbow 방법을 사용하여 최적의 K는 5로 정의
 
-#### - Silhouette Plot
-* 
+<p align= 'center'>
+    <figure align= 'center'>
+        <img src='./img/inertia.png', title= '인구 연령구분 선행연구'>
+        <figcaption>그림3. 인구구조 TimeSeries K-Means Cluster Inertia</figcaption>
+    </figure>
+</p>
+
+#### - Silhouette Plot: K가 5일 때의 Silhouette 점수를 확인하여 클러스터의 유효성 확인
+<p align= 'center'>
+    <figure align= 'center'>
+        <img src='./img/Silhouette Plot.png', title= '인구 연령구분 선행연구'>
+        <figcaption>그림4. 인구구조 Silhouettte Plot(K=5)</figcaption>
+    </figure>
+</p>
 
 ## 5. 도시유형별 특징
 
