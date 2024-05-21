@@ -7,7 +7,8 @@
 - 참고: 행정안전부 인구감소지역 지정 [[바로가기](https://www.mois.go.kr/frt/sub/a06/b06/populationDecline/screen.do)]
 
 <p align= 'center'>
-    <img src='./img/행안부_인구감소지역_202309.jpg' width= '250px' title='인구감소지역'></img>
+    <img src='./img/행안부_인구감소지역_202309.jpg' width= '250px' title='인구감소지역' />
+    </br>그림1. 행안부 인구감소지역
 </p>
 
 ### - 인구구조 및 인구이동 데이터
@@ -15,7 +16,7 @@
 - 총 5개의 연령층과 외국인 인구를 본 연구에서 사용</br>①신생아(0세), ②유소년인구(1세~14세), ③청년가임인구(20세~39세), ④소비활력인구(40세~59세), ⑤고령인구(65세 이상)
 
 <p align= 'center'>
-    <img src='./img/인구구분_선행연구.png', title= '인구 연령구분 선행연구'>
+    <img src='./img/인구구분_선행연구.png', title= '인구 연령구분 선행연구' />
 </p>
 
 ## 2. 데이터
@@ -54,16 +55,14 @@
 ## 4. K-Means Clustering
 ### 4.1. 최적의 K 찾기
 - Elbow Method: Elbow 방법을 사용하여 최적의 K는 5로 정의
-
-<p align= 'center'>
-    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '200px'>
-</p>
-
 - Silhouette Plot: K가 5일 때의 Silhouette 점수를 확인하여 클러스터의 유효성 확인
 
 <p align= 'center'>
-    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '200px'>
+    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '50%' />
+    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '50%' />
 </p>
+
+
 
 ## 5. 도시유형별 특징
 
