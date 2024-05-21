@@ -6,7 +6,7 @@
 - 인구감소지수는 총 8가지의 지표로 측정 됨</br>①연평균인구증감률, ②인구밀도, ③청년순이동률, ④주간인구, ⑤고령화 비율, ⑥유소년 비율, ⑦조출생률, ⑧재정자립도
 - 참고: 행정안전부 인구감소지역 지정 [[바로가기](https://www.mois.go.kr/frt/sub/a06/b06/populationDecline/screen.do)]
 
-<p>
+<p align= 'center'>
     <img src='./img/행안부_인구감소지역_202309.jpg' width= '250px' title='인구감소지역'></img>
 </p>
 
@@ -56,8 +56,10 @@
 - Elbow Method: Elbow 방법을 사용하여 최적의 K는 5로 정의
 - Silhouette Plot: K가 5일 때의 Silhouette 점수를 확인하여 클러스터의 유효성 확인
 
-<img src='./img/Inertia.png', title= 'Inertia 결과', width= '265px'>
-<img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '265px'>
+<p align= 'center'>
+    <img src='./img/Inertia.png', title= 'Inertia 결과', width= '265px'>
+    <img src='./img/Silhouette_Plot.png', title= '실루엣 분석결과', width= '265px'>
+</p>
 
 ## 5. 도시유형별 특징
 
