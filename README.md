@@ -26,7 +26,8 @@
 - (시간범위) 2013년부터 2022년까지 전연령 인구 데이터
 
 <p align= 'center'>
-    <table>
+    표1. 인구 연령구분
+    <table align= 'center'>
         <tr>
             <th style= 'text-align:center'>구분</th>
             <th style= 'text-align:center' width= 200 >데이터</th>
@@ -76,7 +77,7 @@
 
 <p align= 'center'>
     표2. Euclidean Distance와 Dynamic Time Warping(DTW)의 차이
-    <table>
+    <table align= 'center'>
         <tr>
             <th style= 'text-align:center'>구분</th>
             <th style= 'text-align:center'>유클리드거리</br>(Euclidean Distance)</th>
